@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Юра, Джозеф Джостар и Badware</title>
+  <style>
+    :root {
+      --bg: #070b18;
+      --panel: rgba(15, 22, 46, 0.82);
+      --accent: #7c3aed;
+      --accent2: #22d3ee;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: rgba(255,255,255,0.10);
+      --glow: 0 0 24px rgba(124, 58, 237, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(34, 211, 238, 0.14), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.22), transparent 35%),
+        linear-gradient(135deg, #050816, #0b1024 55%, #040611);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 72px 20px 48px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4.5rem);
+      letter-spacing: 0.04em;
+      text-shadow: var(--glow);
+    }
+
+    .subtitle {
+      max-width: 800px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .grid {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto 64px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(34, 211, 238, 0.35);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      background: rgba(124, 58, 237, 0.16);
+      color: #ddd6fe;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .special {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent2);
+      background: rgba(34, 211, 238, 0.08);
+      border-radius: 14px;
+      color: #dbeafe;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 20px 40px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Юра · Джозеф Джостар · Badware</h1>
+    <div class="subtitle">
+      Фанатский сайт в стиле неона, лазеров и хаоса. Здесь три героя/антигероя
+      сталкиваются в одном странном мире, где всё решает сила, стиль и немного безумия.
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <div class="tag">Юра</div>
+      <h2>Юра с лазерами из глаз</h2>
+      <p>
+        Юра — персонаж уровня катастрофы: молчаливый, эффектный и опасный.
+        Когда он злится, его взгляд превращается в оружие, а воздух вокруг
+        начинает дрожать от энергии.
+      </p>
+      <div class="special">
+        Лазеры из глаз: включаются в момент максимального напряжения.
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="tag">JoJo</div>
+      <h2>Джозеф Джостар</h2>
+      <p>
+        Джозеф — один из самых известных JoJo, главный герой Part 2 и один
+        из самых харизматичных персонажей серии. Он знаменит хитростью,
+        импровизацией и тем, что почти всегда находит неожиданный выход.
+      </p>
+      <div class="special">
+        Его стиль — победа не грубой силой, а умом и провокацией.
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="tag">Die of Death</div>
+      <h2>Badware</h2>
+      <p>
+        Badware — коварная сущность, похожая на живой компьютерный вирус.
+        Он усиливает себя с помощью Firewall Bypass computers и становится
+        особенно опасным, если противник не успевает среагировать.
+      </p>
+      <div class="special">
+        Образ: вирус, скорость, давление и чистый цифровой ужас.
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    Неоновый фан-сайт для персонажей, которых невозможно забыть.
+  </div>
+</body>
+</html>
